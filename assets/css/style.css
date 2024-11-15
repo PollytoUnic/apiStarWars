@@ -1,0 +1,149 @@
+body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./image/fondo5.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: yellow;
+  text-shadow: 3px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
+    3px -3px 0 #000;
+  font-size: 40px;
+  border: 10px;
+}
+
+.rangos {
+  position: relative;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.rango {
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: yellow;
+  font-size: 20px;
+}
+#rango1 {
+  top: 70px;
+}
+#rango2 {
+  top: 300px;
+}
+#rango3 {
+  top: 500px;
+}
+.contenedor {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+.contenedor-secciones {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.linea-vertical {
+  margin: 10px;
+  height: 600px;
+  width: 5px;
+  background-color: #fff;
+}
+.circulos {
+  position: relative;
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.circulo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#circulo1 {
+  top: 70px;
+  background-color: #4c31ac;
+}
+
+#circulo2 {
+  top: 300px;
+  background-color: #d3fa52;
+}
+
+#circulo3 {
+  top: 500px;
+  background-color: #c94040;
+}
+
+.seccion {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 20px 0;
+  width: 100%;
+  height: 200px;
+}
+
+.boton {
+  background-image: url("./image/fondo3.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(129, 128, 128, 0.1);
+  cursor: pointer;
+  width: 25%;
+  height: 40%;
+  text-align: center;
+  font-size: large;
+  color: white;
+}
+
+.contenedor-personajes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 90%;
+  height: 50%;
+  font-size: small;
+}
+
+.personaje-card {
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: 100px;
+  background-image: url("./image/fondo2.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 5px 7px rgba(145, 171, 59, 0.1);
+  text-align: center;
+  color: whitesmoke;
+  height: 100%;
+}
+
+.personaje-card.visible {
+  opacity: 1;
+}
+
+.personaje-card h3 {
+  margin: 0;
+  font-size: 1em;
+}
